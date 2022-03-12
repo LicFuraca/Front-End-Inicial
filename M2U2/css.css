@@ -1,0 +1,29 @@
+.nav-link {
+    color: #DF945F;
+}
+
+.background {
+    background-image: url(presentation.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.content {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    color: #DF945F;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-left: 159px;
+}
