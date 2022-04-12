@@ -1,0 +1,211 @@
+/*font-family: 'Alfa Slab One', cursive;
+font-family: 'Open Sans', sans-serif;
+colores: #F05742 (Logo / H1)
+         Paleta: 
+         #00233a   Azul Oscuro 
+         #D8CEC5    Gris fondo (fondo)
+         #eff4f0    Blanco
+         #e3b505    Amarillo Oscuro
+         #426b69    Cemento verde 
+         
+*/
+
+.logo{
+    height: 090px;
+}
+
+.nav-link {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #F05742;
+}
+
+.nav-link:hover {
+    color: #eff4f0 !important;
+}
+
+.bars {
+    color: #F05742;
+    font-size: 1.2em;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(../img/f2.jpeg);
+    background-size: cover;
+    min-height: 600px;
+    color: #00233a;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: 'alfa slab one', cursive;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #F05742;
+}
+
+.btn-main {
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    color: #00233a;
+    background-color: #e3b505;
+    border: 1px solid;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    color: #00233a;
+    transform: translateY(-0.3em);
+    box-shadow: 0 0.5em 0.5em -0.4em #00233a;
+}
+
+.btn-second {
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    color: #e3b505;
+    background-color: none;
+    border: 1px solid;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.btn-second:hover {
+    color: #ffe479;
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #ffe479;
+}
+
+.btn-cerrar {
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    color: #eff4f0;
+    background-color: #212529;
+    border: 1px solid;
+}
+
+.btn-cerrar:hover {
+    color: #00233a;
+    background-color: #eff4f0;
+}
+
+#nuevos-productos {
+    background-color: #eff4f0;
+}
+
+#nuevos-productos h2 {
+    font-family: 'alfa slab one', cursive;
+    padding-bottom: 0.2em;
+    color: #F05742;
+    border-bottom: 1px solid #F05742;
+    width: 70%;
+}
+
+.lista-productos {
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    list-style: none;
+}
+
+.lista-productos li {
+    margin: 4px 0;
+}
+
+.lista-productos li a {
+    background-color: #426b69;
+    font-family: 'alfa slab one', cursive;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #eff4f0;
+    transition: all .2s ease-in-out;
+    display: block;
+    width: 70%;
+}
+
+.lista-productos li a:hover {
+    color: #426b69;
+    background-color: #eff4f0;
+}
+
+.lista-productos li a img {
+    width: 130px;
+    height: 80px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-productos li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+#exampleModalLabel {
+    font-size: 1.3em;
+    color: #00233a;
+}
+
+.clients {
+    background-color: #eff4f0;
+    padding-bottom: 4rem !important;
+}
+
+#testimonios {
+    margin-top: 0.55em;
+}
+
+.client {
+    width: 100%;
+}
+
+.client img {
+    height: 570px;
+    
+}
+
+#alimentos {
+    font-family: 'alfa slab one', cursive;
+    padding: 0.3em 0;
+    color: #F05742;
+    border-bottom: 1px solid #F05742;
+}
+
+.img-size {
+    width: 200px;
+    height: 320px;
+}
+
+#carouselMarcas .imgMarca {
+    height: 20rem;
+}
+
+#marcas {
+    font-family: 'alfa slab one', cursive;
+    padding: 0.3em 0;
+    /* color: #426b69; */
+    font-size: 2rem;
+}
+
+#contactanos h2 {
+    font-family: 'alfa slab one', cursive;
+    padding: 0.3em 0;
+    color: #F05742;
+    border-bottom: 1px solid #F05742;
+}
+
+footer {
+    background-color: #212529;
+    color: #eff4f0;
+}
