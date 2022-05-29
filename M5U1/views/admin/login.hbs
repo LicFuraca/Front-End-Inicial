@@ -1,0 +1,18 @@
+<div class="container" style="margin: 200px 0;">
+    <div class="row">
+        <div class="col">
+            <form action="/admin/login" method="post">
+                <div class="form-group">
+                <label for="usuario" class="form-label">Usuario</label>                
+                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Escribí tu usuario">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control mb-3" name="password" id="password" placeholder="Escribí tu contraseña">
+                <button type="submit" class="btn btn-main mt-3">Log in</button>
+                </div>
+            </form>
+            {{#if error}}
+                <p>Usuario o password incorrecto</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

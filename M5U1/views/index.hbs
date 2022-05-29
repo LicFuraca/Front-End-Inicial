@@ -1,0 +1,258 @@
+  <!-- HEADER -->
+    <nav class="navbar navbar-expand-md fixed-top bg-dark">
+      <div class="container">
+      
+        <a href='#' class="navbar-brand">
+          <img src="images/logo.png" alt="Logo de LO DE RUFFO" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#expand" aria-controls="expand" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="expand">
+          <div class="navbar-nav">
+            <a class='nav-link' href="#home">Home</a>
+            <a class='nav-link' href="#nuevos-productos">Novedades</a>
+            <a class='nav-link' href="#alimentos">Alimentos</a>
+          </div> <!-- NAVBAR NAV-->
+
+          <a href="#contactanos" class="btn-second">Contactanos</a>
+
+        </div> <!-- COLLAPSE -->
+      </div> <!-- CONTAINER -->
+    </nav>
+    <!-- TERMINA HEADER -->
+
+    <!-- HERO -->
+    <div class="container-fluid"></div>
+    <div id="home" class="row align-items-center hero">
+      <div class="col-md-3 offset-md-7">
+        <p class="hero-sub">¡El lugar donde tus mascotas comprarían!</p>
+        <h1>lo de ruffo</h1>
+        <a class="btn-main" href="#">Conoce mas</a>
+      </div>
+    </div>
+    <!-- TERMINA HERO -->
+
+    <!-- NUEVOS INGRESOS -->
+    <div id="nuevos-productos" class="row py-4">
+      <div class="col-md-5 offset-md-2 py-3">
+        <h2>Nuevos Productos</h2>
+        <ul class="lista-productos">
+          {{#each novedades}}
+          <li>
+            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{id}}"
+              ><img src="images/nuevos1.jpg" alt="nuevos productos" />{{titulo}}</a>
+          {{/each}}
+        </ul>
+      </div>
+
+      <!-- TESTIMONIOS -->
+    <div id="carouselExampleControls" class="carousel slide col-md-3" data-bs-ride="carousel">
+        <h2 id="testimonios">Colas Contentas!</h2>
+      <div class="rounded py-3 clients">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="client">
+            <img src="images/happydog (3).jpg" class="d-block w-100" alt="foto cliente contento">
+            <h3>Nestor</h3>
+            <p>Gracias Christian por la buena atencion y todo el amor con el que me trataste</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="client">
+            <img src="images/happydog (2).jpg" class="d-block w-100" alt="foto cliente contento">
+            <h3>Fido</h3>
+            <p>Siempre compro mis comidas aca y me encantan</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="client">
+            <img src="images/happydog (4).jpg" class="d-block w-100" alt="foto cliente contento">
+            <h3>Roma</h3>
+            <p>Me encantan los juguetes de LO DE RUFFO!</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <!-- FIN TESTIMONIOS -->
+    <!-- TERMINA NUEVOS INGRESOS -->
+
+    <!-- MODAL -->
+    {{#each novedades}}
+    <div
+      class="modal fade"
+      id="modal{{id}}"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              {{titulo}}
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>{{subtitulo}}</h6>
+            <p>{{cuerpo}}</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-cerrar"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn-main">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    <!-- fin modal -->
+
+    
+
+    <!-- ALIMENTOS -->
+
+    <section class="container">
+      <h2 class="text-center" id="alimentos">Alimentos</h2>
+      <div class="row">
+
+        <div class="col-4 product-card">
+          <img class="img-fluid d-block mx-auto img-size" src="images/comida1.jpg" alt="Alimento para perro">
+          <h5 class="text-center">MiMaskot</h5>
+          <p class="text-center">Precio: $3.699</p>
+        </div>
+
+        <div class="col-4 product-card">
+          <img class="img-fluid d-block mx-auto img-size" src="images/comida2.jpg" alt="Alimento para perro">
+          <h5 class="text-center">Pedigree</h5>
+          <p class="text-center">Precio: $3.699</p>
+        </div>
+
+        <div class="col-4 product-card">
+          <img class="img-fluid d-block mx-auto img-size" src="images/comida3.jpg" alt="Alimento para perro">
+          <h5 class="text-center">Pedigree</h5>
+          <p class="text-center">Precio: $4.500</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-4 product-card">
+          <img class="img-fluid mx-auto d-block" src="images/comida4.jpg" alt="Alimento para perro">
+          <h5 class="text-center">Maintenance</h5>
+          <p class="text-center">Precio: $4.999</p>
+        </div>
+
+        <div class="col-4 product-card">
+          <img class="img-fluid d-block mx-auto img-size" src="images/comida5.jpg" alt="Alimento para perro">
+          <h5 class="text-center">ProPlan</h5>
+          <p class="text-center">Precio: $5.200</p>
+        </div>
+
+        <div class="col-4 product-card">
+          <img class="img-fluid d-block mx-auto img-size" src="images/comida6.jfif" alt="Alimento para perro">
+          <h5 class="text-center">ProPlan</h5>
+          <p class="text-center">Precio: $3.699</p>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <h2 id="marcas" class="text-center pt-5">Marcas que confian en nosotros</h2>
+        <div id="carouselMarcas" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="images/PROPLAN.svg" class="d-block w-100 imgMarca" alt="LOGO PROPLAN">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/pedigree-1.svg" class="d-block w-100 imgMarca" alt="LOGO PROPLAN">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/dog-chow.svg" class="d-block w-100 imgMarca" alt="LOGO PROPLAN">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FIN ALIMENTOS -->
+    <!-- CONTACTANOS -->
+
+    <section id="contactanos" class="container">
+      <h2>Contactanos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0612890015996!2d-58.46358168423789!3d-34.55200356227177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4284101de21%3A0x2ab397f466eae5cc!2sIber%C3%A1%202110%2C%20C1429%20CABA!5e0!3m2!1ses!2sar!4v1649801702204!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-md-6">
+          <form action="/" class="mb-3" method="post">
+            <div class="form-group">
+              <div class="row">
+                <div class="col pb-3">
+                  <label for="Name" class="form-label">Nombre</label>
+                  <input type="text" name="Name" id="Name" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                  <label for="lastName" class="form-label">Apellido</label>
+                  <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col pb-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col pb-3">
+                  <label for="Consulta" class="d-block">Consulta</label>
+                  <textarea name="Consulta" id="Consulta" cols="40" rows="7" placeholder="Su consulta"></textarea>
+                </div>
+              </div>
+              <button class="btn btn-main">Enviar</button>
+            </div>
+          </form>
+          {{#if message}}
+          <p>{{message}}</p>
+          {{/if}}
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FIN CONTACTANOS -->
+    
+
+    <!-- footer -->
+    <footer>
+      <p class="text-center">Diseñado por: Martín Díaz &copy; 2022</p>
+    </footer>
+    <!-- FIN FOOTER -->
