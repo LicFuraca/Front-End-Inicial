@@ -29,7 +29,6 @@
       <div class="col-md-3 offset-md-7">
         <p class="hero-sub">¡El lugar donde tus mascotas comprarían!</p>
         <h1>lo de ruffo</h1>
-        <a class="btn-main" href="#">Conoce mas</a>
       </div>
     </div>
     <!-- TERMINA HERO -->
@@ -42,7 +41,7 @@
           {{#each novedades}}
           <li>
             <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{id}}"
-              ><img src="images/nuevos1.jpg" alt="nuevos productos" />{{titulo}}</a>
+              ><img src={{imagen}} alt="nuevos productos" />{{titulo}}</a>
           {{/each}}
         </ul>
       </div>
@@ -122,7 +121,6 @@
             >
               Cerrar
             </button>
-            <button type="button" class="btn-main">Comprar</button>
           </div>
         </div>
       </div>
