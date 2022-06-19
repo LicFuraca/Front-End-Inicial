@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }).then(function(response) {
             response.json().then(function(obj) {
                 feedback.innerText = obj.message;
-            });
+            })
         });
     });
 });
