@@ -61,14 +61,14 @@ router.post('/', async(req, res, next)=> {
   var info = await transport.sendMail(obj);
   
   // CON ESTO FUNCIONABA ANTES!
-  res.render('index', {
-    message: 'Mail enviado correctamente',
-  });
+  // res.render('index', {
+  //   message: 'Mail enviado correctamente',
+  // });
 
   // ESTO ES LO NUEVO AGREGADO.
-  // res.json({
-  //   message: 'Mensaje enviado correctamente',
-  // });
+  res.json({
+    message: 'Mensaje enviado correctamente',
+  });
   
 });
 
