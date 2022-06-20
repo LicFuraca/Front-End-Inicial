@@ -1,5 +1,3 @@
-// ESTO ES LO NUEVO AGREGADO.
-
 window.addEventListener('DOMContentLoaded', (event) => {
     var form = document.querySelector('#contact_form');
     var feedback = document.querySelector('#feedback');

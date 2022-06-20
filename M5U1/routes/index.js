@@ -65,7 +65,7 @@ router.post('/', async(req, res, next)=> {
   //   message: 'Mail enviado correctamente',
   // });
 
-  //ESTO ES LO NUEVO AGREGADO.
+  // ESTO ES LO NUEVO AGREGADO.
   res.json({
     message: 'Mensaje enviado correctamente',
   });
